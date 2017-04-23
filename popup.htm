@@ -3,33 +3,41 @@
 <title> Getting Started </title>
 </head>
 <body>
- 	<p id="timer"></p>
-
+    <h2> JavaScript Alert</h2>
+    <button onclick="myFunction()">Try It</button>
     <script>
-        var countDownDate = new Date("Apr 24, 2017 15:37:25").getTime();
-        var x = setInterval(function () {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("timer").innerHTML = minutes + ":" + seconds;
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("timer").innerHTML = "EXPIRED";
-            }
-        }, 1000);
+        function myFunction() {
+            alert("The 20 minute period has expired! Please take a minimum of a 20 second break to rest your eyes.");
+        }
     </script>
-	<h4> Please select the format you would like to implement:</h4>
-		<p> 
+ 	<h4> Please select the format you would like to implement:</h4>
+		<p>
+             
 			<a href = "https://www.google.com" target="_blank"> Check out Google here </a>
 			</br />
 
 		</p>
 		<p> 
-			<a href = "https://www.apple.com"> Check out Apple here </a>
+			<a href = "https://www.apple.com" target="_blank"> Check out Apple here </a>
 			</br />
-		
+		</p>
+        <p id="timer">
+        <script>
+            var countDownDate = new Date("Apr 23, 2017 15:00:00").getTime();
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("timer").innerHTML = minutes + ":" + seconds;
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+        </p>
 </body>
 </html>

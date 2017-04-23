@@ -1,1 +1,15 @@
-dfsdf
+h1{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line height: 23px;
+	background-color: transparent;
+	padding: 20px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+}
