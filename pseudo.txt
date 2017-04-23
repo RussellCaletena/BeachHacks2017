@@ -1,0 +1,13 @@
+
+# 
+# Pseudocode for 20-20-20 Vision Google Chrome Extension
+# Name: Russell Caletena
+# Date: 4-22-17
+
+# User is on a webpage
+# When user is on a webpage, there is a 20 minute period where users can browse the web
+# Once the 20 minutes is up, display a blacked out screen with a 20 second timer saying "Please take a 20 second break from looking at your screen and look at something 20 feet away
+# Once the 20 seconds is up, take away the blacked out screen and allow user to continue browsing the web.
+# Repeat indefinitely until user closes Google Chrome or until the 20-20-20 Vision Google Chrome Extension is deactivated
+
+
